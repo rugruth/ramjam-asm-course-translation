@@ -1,7 +1,7 @@
 PRÓLOGO
 Fabio Randy Ciucci
 Comienzo a escribir el prefacio para el curso de ASM 22 años después de su lanzamiento, en los mismos días que
-Javascript, un lenguaje no compilado, ha demostrado ser el más popular de 2015 tanto en
+Javascript, un lenguaje no compilado, ha demostrado ser el más popular en 2015 tanto en
 StackExchange como en GitHub, no solo para aplicaciones web sino también para servidores usando Node y en aplicaciones móviles.
 A nadie le importa que un proyecto de Angular genere aproximadamente entre 50-100MB de archivos en la carpeta
 mode_modules al ejecutar npm-install, aunque simplemente sea para hacer un botón "hello world". La primera vez que lo probé, exclamé: 
