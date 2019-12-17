@@ -1,0 +1,39 @@
+PRÓLOGO
+Fabio Randy Ciucci
+Comienzo a escribir el prefacio para el curso de ASM 22 años después de su lanzamiento, en los mismos días que
+Javascript, un lenguaje no compilado, ha demostrado ser el más popular de 2015 tanto en
+StackExchange como en GitHub, no solo para aplicaciones web sino también para servidores usando Node y en aplicaciones móviles.
+A nadie le importa que un proyecto de Angular genere aproximadamente entre 50-100MB de archivos en la carpeta
+mode_modules al ejecutar npm-install, aunque simplemente sea para hacer un botón "hello world". La primera vez que lo probé, exclamé: 
+"¿Estás bromeando?" No me podia creer que la tecnologia mas moderna y en boga del momento, para 4 fuentes de prueba en 4 carpetas, 
+generase 4 copias de librerías casi identicas, cada una de ellas con 100 MB y miles de archivos opensource de dudosa conherencia y utilidad. 
+Ya solo eso me pareció ineficiente.
+Habiendo escrito intros de 4kb cuando era niño, olvido que 400MB en mi disco duro SSD turbo de
+512GB ocupan proporcionalmente menos de una intro de 4kb en un disco de 700k. Y que todo
+se ejecuta con 8 núcleos a 3 GHz, 16 GB de RAM y espacio Nvidia. . . y estoy hablando de una laptop
+Incluso los teléfonos son tan potentes que con Cordova / Phonegap las mismas mezclas de Javascript y CSS
+se utilizan cada vez más para crear aplicaciones de Android e iOS, a fin de no utilizar Java u Objective C. Excepto
+que para juegos más complicados, para aquellos que solo usan C ++ siempre, incluso si los motores
+2d y 3d están escritos por otros, que a su vez llaman OpenGL y similares que llaman le
+tarjetas gráficas En otras palabras, miles de archivos de los cuales todos conocen solo su propia pequeña pieza
+aplicable. En asm das y tomas literalmente la corriente a los circuitos integrados que deseas, porque yo
+qué milisegundos desea, para que la corriente llegue a ese punto en el monitor, a ese motor de disco
+conducir, a ese altavoz. No llame a otras librerías si no al principio para informar amablemente
+sistema operativo para salir del camino que no se necesita mucho. El código es solo tuyo, a menos que tengas
+rasgado, o copiar y pegar piezas, pero es todo y solo en su fuente, esto
+El control absoluto y el conocimiento total te hacen sentir sobrenatural. Un sentimiento que no se siente
+cuando escribe 100 líneas que llaman a otro millón de líneas entre API y sistemas operativos de los cuales
+ignore los detalles y eso, seamos sinceros, a menudo están llenos de errores y las versiones entran en conflicto entre
+ellos y así sucesivamente.
+Además, el software no pretende hacerte sentir sobrenatural, sino que debe resolver
+problemas en tiempos y costos reducidos, y hoy cuesta más tiempo para el programador espacial
+disco duro o velocidad de CPU / GPU. De hecho, he estado escribiendo mis cosas en Python durante muchos años cuando es posible,
+porque (a diferencia de Javascript) se pone muy temprano y a menudo sigue siendo complaciente
+de la mayor elegancia y brevedad en comparación con C ++ o Java, de los cuales enredos de llaves y
+los ciclos "para" ciertamente no.
+El mayor cambio no es lo que todos ven o el hardware y los idiomas,
+pero internet y código abierto: en el momento en que lancé el curso ASM, era la única fuente completa
+de información sobre el tema en italiano. Y en cualquier caso, había pocos libros en inglés.
+y evasivo, y sobre todo nadie lanzó los códigos fuente, a menudo ni siquiera a los miembros de
+mismo grupo El código era una cosa esotérica de élite para mantener en secreto tanto a los Lamers como a los
+xiii
