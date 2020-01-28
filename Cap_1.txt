@@ -1,0 +1,64 @@
+Para todos aquellos que han intentado aprender a hacer demos o juegos que explotan el hardware de Amiga directamente, pero nunca han tenido éxito porque los libros se escribían de manera abstracta y complicada, y los fuentes de ejemplo, es decir, los listados, o estaban poco comentados o eran demasiado difíciles, o para aquellos que nunca lo han intentado y se preguntan cómo se hace.
+
+Tengo que agradecer y saludar a todos aquellos que han contribuido material o moralmente a la creación de estos dos disquetes, en particular:
+- Luca Forlizzi (El Codificador Oscuro)
+- Andrea Fasce (Ejecutora/RAM JAM)
+- Sirio Zuelli (DISEÑO PROXIMA)
+- Alberto Longo (SUEÑOS VIRTUALES)
+
+Así como a los que probaron las lecciones comprobando si podian entenderlas:
+- Andrea Scarafoni
+- Federico "GONZO" Stango, y otros.
+
+En mi carrera como programador aficionado puedo presumir de la realización de algunas demos/intros para las BBS, por ejemplo "AMILINK.EXE", para la base de datos AmigaLink, o para el Club, como  aquella del nuevo "Amiga Expert Team". Mis principales "obras" son mi primera demo para el chipset AGA, "World of Manga", que también ha sido publicada en algunas revistas, y "Naos", que he programado para el grupo Nova ACIES.
+
+Debo señalar que sería bueno saber al menos un poco sobre el DOS antes de leer este curso, ¡aunque sólo sea para saber cómo guardar los listados! Deberías haber encontrado un manual junto a tu Amiga... De todos modos, en resumen, en los discos (tanto en el disco duro como en los disquetes) los datos se almacenan en "archivos", es decir, una serie de pequeños números uno tras otro, que juntos pueden formar archivos gráficos, música, ejecutables, listados y demás. 
+
+Tenga en cuenta que un disquete virge debe ser formateado para poder ser utilizado, de lo contrario es imposible escribir en él. Una vez formateado, tu puedes guardar cualquier archivo, ya sea imágenes con programas gráficos, o texto (como este que estás
+leyendo) y otros. Puedes copiar un archivo de un disco a otro, borrarlo o puedes cambiar su nombre, etcétera. En un disco puede haber muchos archivos, hasta que se llenan alrededor de 880Kb, tal vez con 2 archivos de 400Kb o unos treinta archivos más pequeños. Ten en cuenta que dentro de un disco, para hacer un poco de orden, se pueden generar varios "subdirectorios", es decir cajones más pequeños, divisiones para poner archivos. Por ejemplo, puede generar el subdirectorio DIBUJOS y TEXTOS, en los que copiaremos o guardaremos respectivamente imágenes y cartas para la novia, para no tener que poner dibujos y textos sueltos en el directorio principal.
+
+Es como si el disco fuera un armario, y el subdirectorio cada uno de los cajones de este armario. También puedes hacer un subdirectorio dentro de otro subdirectorio. Cada uno de estos cajones puede contener archivos sueltos o "cajas" con archivos u otras "cajas" más pequeñas en el interior. ¡Así que un sistema similar al muebles! 
+
+Para realizar operaciones entre archivos puedes usar el CLI/Shell, en el que necesitas escribir algunas órdenes como:
+*Dir* Enumera los archivos y subdivisiones contenidos en un disco
+*Copy* Copiar archivos
+*Delete* Borrar un archivo (¡ATENCION AL USAR ESTO!)
+*Makedir* Crear un "cajón" (o subdirectorio)
+
+O tambien puedes utilizar el ratón desde el WorkBench, en el cual los archivos se "representan" como iconos y los subdirectorios como cajones. Ten en cuenta que la unidad interna se llama "df0:", las externas "df1:", "df2:", etcétera. El disco duro suele llamarse "Dh0:" (o "Hd0:"). Un sistema más rápido es utilizar utilidades como DiskMaster o DirOpus.
+
+Por lo tanto, cuando hayas escrito algunos listados, tendrás que guardarlos en un disco formateado, o en el Disco Duro algun subdirectorio. Otra cosa que hay que saber es cómo hacer un disco "autoboot", es decir que se arranca automáticamente al insertarlo en la unidad cuando se enciende la alimentación o después de un reinicio.  Supongamos que guardamos un programa ejecutable en un disquete con el nombre "miprograma". Necesitaráa crear un subdirectorio "S", en el que guardarás un archivo de texto con el nombre "startup-sequence", en el que se escribe el nombre del programa que se va a cargar automáticamente: 
+*miprograma*
+
+La startup-sequence también puede modificarse (editarse) con el programa con el que estás leyendo, que también es un editor de textos. Por último, debe "instalar" (hacer auto-arrancable) el disco en cuestión escribiendo en el cli/shell el comando:
+*Install df0:*
+
+O "install df1:" si se inserta el disquete en la unidad externa. Dicho esto, puedes
+continuar con las notas.
+
+NOTA: Si deseas instalar el curso en tu disco duro, recuerda copiar a tu directorio S: el archivo "TRASH'M-ONE16.pref" situado en el directorio S: del disquete del curso.
+
+NOTA2: Si deseas imprimir los listados, recuerda que están comprimidos con el powerpacker, por lo que necesitas el PowerPacker Patcher, el que usamos en este curso.(el archivo con nombre PP del directorio C). Para instalarlo, sólo necesitas tener en LIBS: el powerpacker.library y ejecutar el comando PP. Los listados se descomprimiran por sí mismos cuando se carguen.
+-----
+Este curso trataremos diversos temas de programación, como el COPPER, los SPRITES, el BLITTER, así como el nuevo chipset AGA y programación de la tarjeta de vídeo PICASSO II. 
+
+En el disco 1 los temas son: 68000, el COPPER, los playfields y los sprites. El blitter, AGA y el resto están en los discos 2 y 3, y no están terminados.
+
+En cuanto a la distribución y copia de este curso, debes saber que es GiftWare/Shareware y no propiamente de dominio público. Con esto quiero decir que le puedes copiar a tus amigos este curso sin ningún problema simplemente no lo vendas por dinero, ya que los derechos en este curso son del autor, es decir, de mí, y ciertamente no del primer listillo que quiere especular sobre el trabajo de otras personas. Por otra parte, si puedes copiarlo y distribuirlo SOLAMENTE AL PRECIO DEL LOS DISCOS VIRGENES. También debes recordar que si sigues las diferentes lecciones con éxito, y programas algo que se ha beneficiado de mi trabajo, deberias de  agradecermelo de alguna manera, especialmente si te conviertes en el programador más rico del mundo (bueno,
+por si acaso...) Este agradecimiento es cuantificable a tu gusto, preferiblemente en billetes de 10.000. La posible afluencia de pequeños regalos, o mejor, de dinero, me animaría a seguir con el hobby de programación en el Amiga, y también a escribir nuevos capítulos del curso.
+
+También me harás un gran favor si copias a todos tus amigos este disco 1 del curso, aunque personalmente no te importe, porque le darás a alguien más la oportunidad de tenerlo y aprender a programar. Decidí escribir un curso de ASM (ensamblador) porque 10.000 personas me lo han pedido, y dado que lo hago por diversión lo escribí de una manera muy cuestionable pero, en mi opinión, más clara para los principiantes, que una vez comiencen a entender, serán capaces de continuar profundizando. Los que ya son expertos en ASM encontrarán que  las lecciones son divertidas, auque tal vez encuentre algunas inexactitudes en ellas, así que sugiero que consulte directamente los listados de ejemplo: este curso es para aquellos que empiezan de cero. De hecho,desde mi experiencia personal y de lo que me dicen los aspirantes a "CODER" (en la jerga de programación CHICOS MALOS), el problema es simplemente entender todo el asunto y hacer los primeros dos o tres pequeños programas, despues de los cuales ya puedes continuar por su cuenta. Me propongo, por lo tanto, enseñar a girar algunas bolas por la pantalla o hacer dar saltitos a algunas letras a alguien que ni siquiera sabe lo que es el 68000. 
+
+Si después quieren convertirse en programadores de juegos y unirse al TEAM 17 sólo tienen que seguir adelente.
+
+PARA APRENDER A PROGRAMAR UN JUEGO TIPO GODS O PROYECT X O EN TODO CASO
+UN JUEGO QUE NO SEA UN SIMULADOR DE VUELO O UN JUEGO EN 3D, QUE YA SABES,
+NO INCLUYA CUBOS GIRATORIOS, TÚNELES SINUSOIDALES O DISTORSIONES DE
+PERSPECTIVA, FRACTALES O MAPEADOS DE TEXTURA, TE GARANTIZO QUE SÓLO necesitas
+TENER LOS CONOCIMIENTOS MATEMÁTICAS DE OCTAVO GRADO.
+
+Me gustaría sacer de la cabeza a todos que la programación del ensamblador de la Amiga esta llena de matemáticas. No creo que tenga nada que ver con eso. Si vas a hacer matemáticas, tienes que saber matemáticas de la misma manera que si quieres hacer un juego fútbol tienes que saber de fútbol. Lo importante es saber cómo funciona el Amiga, su procesador (en el caso de la Amiga un Motorola 68000) y sus custom chips (es decir,los dedicados a la creación gráficos y sonido). Personalmente estudié secundaria en el Instituto de Arte de mi ciudad natal, y aprendí a hacer cositas en ASM ya cuando estaba en secundaria, usando bien el tiempo que le dedicaba al Amiga en lugar de jugar con él: no hay necesidad de ir a la facultad de informática de la universidad, ¡¡¡¡¡donde seguro que no enseñan a programar juegos o demos para el Amiga!!!!!
+
+¿Pero por qué aprender a programar juegos o demos? ¿Y qué son las demos? Bueno, los juegos son lo que todo el mundo sabe, así que cualquiera que quiera aprender a programarlos se supone que está cansado de ver juegos que no son como él quiere, y hacer el "SUYO", como él quiere, pixel a pixel. En lo que respecta a las demos, se requiere una breve explicación. Demo significa "demostración", es decir, demostración gráfica. ¿Demostración de qué? Del poder del Amiga y la habilidad de los programadores, por supuesto.
+
+
